@@ -3,7 +3,7 @@ package ajancencymatrix;
 public class Node {
    char data;
    
-   Node(char node){
+   Node(char data){
        this.data = data;
    }   
 }
