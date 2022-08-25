@@ -1,6 +1,5 @@
 package binarysearch;
 
-import java.util.Map;
 
 public class BinarySearchTree {
     Node root;
@@ -22,9 +21,11 @@ public class BinarySearchTree {
         }
         return root;
     }
+    
     public void display(){
         displayHelper(root);
     }
+    
     private void displayHelper(Node root){
         if (root != null){
             displayHelper(root.left);
@@ -32,9 +33,11 @@ public class BinarySearchTree {
             displayHelper(root.right);
         }
     }
+    
     public boolean search(int data){
        return searchHelper(root, data);
     }
+    
     private boolean searchHelper(Node root, int data){
         if (root == null){
             return false;          
@@ -88,6 +91,7 @@ public class BinarySearchTree {
         }
         return root.data;
     }
+    
     private int predecessor(Node root){
         root = root.left;
         while(root.right != null){

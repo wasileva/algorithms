@@ -1,7 +1,5 @@
 package binarysearch;
 
-import java.util.Map;
-
 
 public class Main {
 
@@ -19,9 +17,7 @@ public class Main {
         
         tree.remove(5);
         tree.display();
-       
-        
-              
+            
         System.out.println(tree.search(1));
     }
     
