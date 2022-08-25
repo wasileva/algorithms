@@ -3,15 +3,10 @@ package mergesort;
 public class MergeSortClass {
 
     public static void main(String[] args) {
-      //  int[] array = {8, 2, 5, 3, 4, 7, 6, 1};
         int[] array = {3, 7, 8, 5, 4, 2, 6, 1};
         
         mergeSort(array);
-        
-        for (int i : array){
-            System.out.print(i + " ");
-        }
-        System.out.println("");
+        printArray(array);      
     }
     
     public static void mergeSort(int[] array){       
@@ -69,7 +64,14 @@ public class MergeSortClass {
             i++;
             }
         }
-       
+    
+    public static void printArray(int[] array){
+        for (int i : array){
+            System.out.print(i + " ");
+        }
+        System.out.println("");
     }
+       
+ }
    
 
